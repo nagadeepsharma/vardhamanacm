@@ -21,12 +21,14 @@
                 <div class="card2">
                     <div class="mattercard">
                         <h1>Projects By Vasc</h1>
+                        {% for j in aprojects %}
                         <div class="mattercardhead">
-                            {% for j in aprojects %}
+                            
                             <i class="fa fa-arrow-right"></i>
                             <a href={{j.link}}><h3>{{j.title}}</h3></a>
-                            {% endfor %}
+                            
                         </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
