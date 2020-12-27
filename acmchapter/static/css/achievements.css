@@ -1,0 +1,145 @@
+body{
+    margin:0;
+}
+.aaa{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.achievements{
+    width: 80%;
+    height: 80%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+.achievementshead{
+    
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+.achievementshead h1{
+    font-size: 3rem;
+    color: rgb(0,58,120);
+}
+.achievementsbody{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.achievementsbody1{
+    width: 50%;
+    height: 90%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.achievementsbody2{
+    width: 50%;
+    height: 90%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+width: 90%;
+height: 30%;
+box-shadow: 2px 2px 6px 2px rgba(104, 94, 94, 0.2);
+word-break: break-all;
+animation:1s card ease;
+
+}
+
+.card1 h3{
+    color: rgb(0,58,120);
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    box-shadow: 2px 2px 6px 2px rgba(126, 113, 113, 0.2);
+    animation: 1s card  ease;
+}
+.mattercard{
+    
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+}
+.mattercard i{
+    color:rgb(253, 184, 17);
+}
+.mattercardhead{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-around;
+    width: 100%;
+}
+.mattercardhead h3{
+    color: rgb(0,58,120);
+}
+.aeventpast{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation:1s card ease;
+}
+p{
+    text-transform: capitalize;
+}
+td{
+    width: fit-content;
+    white-space:pre-line
+}
+@keyframes card{
+    0%{
+        transform: translateY(50%);
+        display: flex;
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateY(0%);
+        display: flex;
+        opacity: 1;
+    }
+}
+@media(max-width:667px){
+    .aaa{
+        height: 160vh;
+    }
+    .achievementsbody{
+        flex-direction: column;
+    }
+    .achievementsbody1{
+        flex-direction: column;
+        height: 80%;
+        width: 100%;
+    }
+    .achievementsbody2{
+        flex-direction: column;
+        height: 80%;
+        width: 100%;
+    }
+    .card1{
+        width: 100%;
+    }
+}

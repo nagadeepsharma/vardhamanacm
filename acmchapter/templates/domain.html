@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div id="mainn" class="d_main">
+        <div class="d_heading"><h1>DOMAINS</h1></div>
+        <div class="d_over">
+            <p>For the overall development of our members, we have created several SIGs namely,
+                 Machine learning, Web Development, Android Development, Competitive Coding, 
+                 Electronicsand Cyber Security.New domains are to be added such as Blockchain 
+                 and Cloud Computing.Regular meetups and teaching sessions are conducted by 
+                 VASC members so that like-minded people can come together, interact and 
+                 share knowledge with each other. We nurture the growth of inquisitive minds 
+                 by providing them with every opportunity to excel in various fields.The 
+                 chapter organizes seminars and workshops on different domains by speakers 
+                 who are well-known in their fields,which give students opportunities to 
+                 learn about advanced research subjects.</p>
+        </div>
+    </div>
+    <div class="d_items">
+        <div class="d_boxesrow1">
+            <div class="d_card">
+                <img src="{% static 'images/Android.jpg'%}">
+                <h3>Android Development</h3>
+            </div>
+            <div class="d_card">
+                <img src="{% static 'images/Web1.jpg'%}">
+                <h3>Web Development</h3>
+            </div> 
+            <div class="d_card">
+                <img src="{% static 'images/Blockchain.jpg'%}">
+                <h3>Block Chain Tech</h3>
+            </div>
+        </div>
+        <div class="d_boxesrow2">
+            <div class="d_card">
+                <img src="{% static 'images/CS.jpg'%}">
+                <h3>Cyber Security</h3>
+            </div>
+            <div class="d_card">
+                <img src="{% static 'images/CC.jpg'%}">
+                <h3>Competitive Programming</h3>
+            </div>
+            <div class="d_card">
+                <img src="{% static 'images/ML.jpg'%}">
+                <h3>Machine Learning</h3>
+            </div>
+
+        </div>
+    </div>
+{%endblock%}

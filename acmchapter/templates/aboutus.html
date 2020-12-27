@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div id="mainn" class="aboutus">
+        <div class="a_heading">
+            <h1>ABOUT US</h1>
+        </div>
+        <div class="a_line1">
+            <hr>
+        </div>
+        <div class="a_sidehead1">
+            <h2>Association for Computing Machinery</h2>
+        </div>
+
+        <div class="a_info">
+            <div class="a_left">
+                    <img  src="https://pict.acm.org/assets/images/aboutus/acmlogo.jpeg">
+            </div>
+            <div class="a_right">
+                <p> Founded by Richard Hamming in 1947, ACM brings together computing educators, researchers, and professionals to inspire dialogue, share resources, and address the field's challenges.
+
+                    As the world’s largest computing society, ACM strengthens the profession's collective voice through strong leadership, promotion of the highest standards, and recognition of technical excellence. ACM supports the professional growth of its 
+                    members by providing opportunities for life‐long learning, career development, and professional networking. </p>
+            </div>
+        </div>
+
+        <div class="arnge">
+        <div class="a_line2">
+            <hr>
+        </div>
+        <div class="a_sidehead2">
+            <h2>Vardhaman ACM Student Chapter(Women)</h2>
+        </div>
+    </div>
+
+
+        <div class="a_info2">
+
+                <div class="a_right2">
+                <p>  Association for Computing Machinery's Council on Women in Computing is an exclusive woman's only wing of ACM which supports & commemorates the participation, contribution and achievements of women in the technical domain.
+
+                    Encouraging gender equality and women empowerment, ACM W promotes full engagement of women in the technical domain. Through its collaborations and initiatives, ACM W provides a large range of services to all ACM members along with pushing the advancement of contribution of women in the field of computing </p>
+            </div>
+            <div class="a_left2">
+                <img  src="{% static 'images/acmlogo.png'%}">
+        </div>
+
+        </div>
+
+        
+
+        <div class="a_line3">
+            <hr>
+        </div>
+        <div class="a_sidehead3">
+            <h2>Vardhaman ACM Student Chapter</h2>
+        </div> 
+        <div class="a_info3">
+            <div class="a_left">
+                    <img  src="{% static 'images/acmchapter.png' %}">
+            </div>
+            <div class="a_right">
+                <p>  ACM PICT is a student chapter organization subsidiary of Association for Computing Machinery a worldwide learning society for computing. The chapter was founded in March 1, 2011. It was started with a vision to carry on ACM international's intentions on a grass root level in PICT.
+
+                    Our main focus has been on holding numerous events which are to spread computing and technical knowledge in the undergraduate level.We always have the vision to give the best of our capabilities to help an individual to grow in all aspects and also to make ACM student chapter an ideal platform for students. </p>
+            </div>
+        </div>
+
+        
+
+<div class="container">
+    <h3>Contact Form</h3>
+  <form action="nagadeep.chandragiri@gmail.com">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="name..">
+
+    <label for="lname">email</label>
+    <input type="text" id="lname" name="lastname" placeholder="email..">
+
+    
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+
+    </div>
+    {%endblock%}

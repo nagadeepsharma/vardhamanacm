@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{%block content %}
+
+    <div id="mainn" class="main" style="background-image: url({% static 'images/one.jpg' %})">
+        <div class="mainmatter">
+            <h1>VMEG ACM <br>Student Chapter</h1>
+            <a href="{% url 'events'%}">Events</a>
+        </div>
+    </div>
+    <div class="social1">
+        <a href="https://www.facebook.com/nagadeep.sharma"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/nagadeep.sharma/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/nagadeep-sharma-968a8616a/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://twitter.com/Nagadeepsharma"><i class="fa fa-twitter"></i></a>
+    </div>
+    <div class="social2">
+
+    </div>
+    <div class="sectiona">
+        <div class="sectionaone">
+            <h1>VASC</h1>
+            <p>The Vardhaman College of Engineering (VCE) Hyderabad Student Chapter 
+            <br>of the ACM was established in 2009 . Goal of the chapter is to create 
+            <br>interest among the students on latest technologies apart from what 
+            <br>they learn during the course work. The chapter organizes talks and 
+            <br>workshops on different technologies by speakers who are well known 
+            <br>in their area. These talks give students opportunities to learn about 
+            <br>advanced research subjects. Apart from these, some technical activities 
+            <br>are also organized.</p>
+        </div>
+        <div class="sectionatwo">
+            <img src="{% static 'images/college.png' %}">
+        </div>
+    </div>
+    <div class="sectionaa">
+        <div class="sectionaatwo">
+            <img src="{% static 'images/acmlogo.png' %}">
+        </div>
+        <div class="sectionaaone">
+            <h1>VASC</h1>
+            <p>ACM, the world’s largest educational and scientific computing society, 
+            <br>delivers resources that advance computing as a science and a profession. 
+            <br>ACM provides the computing field’s premier Digital Library and serves 
+            <br>its members and the computing profession with leading-edge publications, 
+            <br>conferences, and career resources.</p>
+        </div>
+    </div>
+    <div class="sectionaaa">
+        <div class="sectionaaatwo">
+            <h1>Events</h1>
+            <div class="card">
+                <div class="cardonee">
+                    <h2>Workshops</h2>
+                </div>
+                <div class="cardone">
+                    <h2>Codathon</h2>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardone">
+                    <h2>SIG'S</h2>
+                </div>
+                <div class="cardonee">
+                    <h2>Quizes</h2>
+                </div>
+            </div>
+        </div>
+        <div class="sectionaaaone">
+            
+            <p>VASC has always been trying to help its student members develop 
+            <br>their technical as well as non-technical skills through regularly 
+            <br>organising SIGs of various domains, conducting various workshops 
+            <br>and competitions.</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="head">
+            <h1>Member Benefits of VASC</h1>
+        </div>
+        <div class="body">
+            <div class="bodyl">
+                <li>Complimentary Subscription to Communications – Chapter Members are eligible <br>
+                for a three-month complimentary electronic subscription to ACM’s flagship publication<br>
+                Communications of the ACM. </li>
+                <li>acm.org email address – Chapter members are eligible for an “acm.org” email <br>
+                    forwarding address with filtering </li>
+                <li>ACM Student Quick Takes (SQT) a quarterly email newsletter with each <br>
+                issue highlighting ACM activities, programs, and offerings of interest </li>
+            </div>
+            <div class="bodyr">
+                <li>Receipt of ACM’s Popular E-Newsletters – TechNews, the latest news in computing, 
+                <br>3x weekly; CareerNews, the latest career and industry news, bi-monthly; and 
+                <br>MemberNet, all about ACM people and events monthly. </li>
+                <li>A full-year electronic subscription to XRDS, ACM’s Student Magazine </li>
+                <li>CareerNews, ACM's twice monthly email career news digest </li>
+            </div>
+        </div>
+    </div>
+    <div class="sectionf">
+        <div class="sectionftwo">
+            <img src="{% static 'images/team.jpg' %}">
+        </div>
+        <div class="sectionfone">
+            <h1>Our Team</h1>
+            <p>Vardhaman ACM Student Chapter is a dynamic body of over 300 highly 
+            <br>motivated registered members and over 500 active contributors.</p>
+        </div>
+    </div>
+{% endblock %}
+    

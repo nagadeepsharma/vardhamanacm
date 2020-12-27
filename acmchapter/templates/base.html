@@ -1,0 +1,119 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMEG-ACM Student Chapter</title>
+    <script src="https://use.fontawesome.com/ba01a86084.js"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{% static 'css/domaincss.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blogcss.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aboutcss.css'%}">
+    <link rel="stylesheet" href="{% static 'css/event.css'%}">
+    <link rel="stylesheet" href="{% static 'css/ourteam.css'%}">
+    <link rel="stylesheet" href="{% static 'css/achievements.css'%}">
+</head>
+<body >
+    <div class="navbar">
+        <div class="nav-brand">
+            <img src="{% static 'images/acmchapter.png' %}">
+            <h2>Vmeg ACM<br>Student Chapter</h2>
+            <i class="fa fa-bars fa-2x" onclick='burger()'></i>
+        </div>
+        <div class="ul">
+            <a href="{% url 'index'%}">Home</a>
+            <a href="{% url 'events'%}">Events</a>
+            <a href="{% url 'domain'%}">Domains</a>
+            <a href="{% url 'ourteam'%}">Our Team</a>
+            <a href="">Gallery</a>
+            <a href="{% url 'blog'%}">Blog</a>
+            <a href="{% url 'aboutus'%}">About Us</a>
+            <a href="{% url 'achievements'%}">Achievements</a>
+        </div>
+    </div>
+    {%block content%}{%endblock%}
+    <div class="footer">
+        <div class="fmain">
+            <div class="fcontact">
+                <h2>Contact</h2>
+                <i class="fa fa-map-marker"></i>
+                <p>Vardhaman College Of Engineering<br>Kacharam, Shamshabad – 501 218
+                <br>Hyderabad, Telangana, India</p>
+                <i class="fa fa-envelope-o"></i>
+                <a href="nagadeep.chandragiri@gmail.com">nagadeep.chandragiri@gmal.com</a>
+            </div>
+            <div class="flogo">
+                <img src="{% static 'images/acmchapter.png' %}">
+            </div>
+            <div class="flast">
+                <a href="">Gallery</a>
+                <a href="{% url 'blog'%}">Blogs</a>
+                <a href="{% url 'aboutus'%}">About us</a>                
+                <a href="">ACM LIBRARY</a>
+                <a href="">ACM INDIA</a>
+            </div>
+        </div>
+        <hr>
+        <div class="ffooter">
+            <h2>Developed by VASC Web Team</h2>
+            <button  class="webteamm">Web Team</button>
+        </div>
+    </div>
+    <div class="webteam">
+        <div class="window">
+            <div class="close">
+                <h2>Web Team</h2>
+                <i class="fa fa-window-close"></i>
+            </div>
+            <hr />
+            <div class="cardrow">
+                <div class="webcard">
+                    <img src="{% static 'images/ndp.jpg' %}">
+                    <h3>Ch.Nagadeep</h3>
+                    <div class="webcards">
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="webcard">
+                    <img src="{% static 'images/vaidhik.jpg' %}">
+                    <h3>T.Vaidhik Raj</h3>
+                    <div class="webcards">
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="webcard">
+                    <img src="{% static 'images/mounika.jpeg' %}">
+                    <h3>p.Monika</h3>
+                    <div class="webcards">
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="webcard">
+                    <img src="{% static 'images/viggu.jpg' %}">
+                    <h3>D.Vignesh</h3>
+                    <div class="webcards">
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="cardrow">
+                
+            </div>
+
+        </div>
+    </div>
+    
+<script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>

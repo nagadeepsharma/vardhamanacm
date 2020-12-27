@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="aaa" id="mainn">
+    <div class="achievements">
+        <div class="achievementshead">
+            <h1>Achievements</h1>
+        </div>
+        <div class="achievementsbody">
+            <div class="achievementsbody1">
+                <div class="card1">
+                    <h3>ACM ICPC Regionals</h3>
+                    <p></p>
+                </div>
+                <div class="card1">
+                    <h3> Prestigious Internships</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="achievementsbody2">
+                <div class="card2">
+                    <div class="mattercard">
+                        <h1>Projects By Vasc</h1>
+                        <div class="mattercardhead">
+                            {% for j in aprojects %}
+                            <i class="fa fa-arrow-right"></i>
+                            <a href={{j.link}}><h3>{{j.title}}</h3></a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aeventpast">
+            <div class="eventpasthead">
+                <h2>Past Achievements</h2>
+            </div>
+            <div class="eventpasttable">
+                <table>
+                    <thead>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Participants</th>
+                        <th>Winners</th>
+                    </thead>
+                    {% for i in aevents %}
+                    <tr>
+                        <td>{{i.eventname}}</td>
+                        <td>{{i.eventdate}}</td>
+                        <td>{{i.eventparticipants}}</td>
+                        <td>{{i.eventwinners}}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
