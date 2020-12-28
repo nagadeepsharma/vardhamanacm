@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{% static 'css/event.css'%}">
     <link rel="stylesheet" href="{% static 'css/ourteam.css'%}">
     <link rel="stylesheet" href="{% static 'css/achievements.css'%}">
+    <link rel="stylesheet" href="{% static 'css/gallery.css'%}">
 </head>
 <body >
     <div class="navbar">
@@ -27,7 +28,7 @@
             <a href="{% url 'events'%}">Events</a>
             <a href="{% url 'domain'%}">Domains</a>
             <a href="{% url 'ourteam'%}">Our Team</a>
-            <a href="">Gallery</a>
+            <a href="{% url 'gallery'%}">Gallery</a>
             <a href="{% url 'blog'%}">Blog</a>
             <a href="{% url 'aboutus'%}">About Us</a>
             <a href="{% url 'achievements'%}">Achievements</a>

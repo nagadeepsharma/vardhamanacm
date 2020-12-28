@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="gallery" id="mainn">
+<div class="gallerymain">
+    {% for k in gallery %}
+    <div class="gcard">
+        <img src="{{k.img.url}}">
+    </div>
+    {%endfor%}
+</div>
+</div>
+{%endblock%}

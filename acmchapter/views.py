@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Upcomming,Past,Pastachievements,Projects
+from .models import Upcomming,Past,Pastachievements,Projects,Gallery
 
 # Create your views here.
 
@@ -22,5 +22,8 @@ def achievements(request):
     aevents=Pastachievements.objects.all()
     aprojects=Projects.objects.all()
     return render(request,'achievements.html',{'aevents':aevents,'aprojects':aprojects})
+def gallery(request):
+    gallery=Gallery.objects.all()
+    return render(request,'gallery.html',{'gallery':gallery})
 
 

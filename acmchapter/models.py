@@ -31,3 +31,6 @@ class Projects(models.Model):
     link=models.CharField(max_length=150,blank=True)
     def __str__(self):
         return self.title
+
+class Gallery(models.Model):
+    img=models.ImageField(upload_to='acmchapter/')
