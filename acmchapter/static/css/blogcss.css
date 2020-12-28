@@ -3,7 +3,7 @@ body{
     font-family: 'Roboto',sans-serif;
 }
 .b_main{
-  height: 180vh;
+  height: 110vh;
   width: 100%;
   display: flex;
   flex-direction: column;
