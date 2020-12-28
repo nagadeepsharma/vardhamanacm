@@ -1,23 +1,25 @@
+
 .gallery{
     width: 100%;
     height: fit-content;
     display: flex;
     justify-content: center;
+    overflow: auto;
 }
 .gallerymain{
     height: fit-content;
     width: 80%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: space-evenly;
 }
 .gcard{
     margin-top: 15vh;
-    margin-bottom: 15vh;
-    height: 100px;
-    width: 300px;
-    transition: 1s ease;
+    height: 20%;
+    width: 30%;
+    padding:5px;
 }
-.gcard:hover{
-    transform: scale(1.3);
+.gcard img{
+    width: 100%;
+    height: 100%;
 }
