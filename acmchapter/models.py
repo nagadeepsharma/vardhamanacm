@@ -7,6 +7,7 @@ class Upcomming(models.Model):
     date=models.DateTimeField(auto_now_add=False,null=True,blank=True)
     desc=models.TextField(blank=True)
     link=models.CharField(max_length=150,blank=True)
+    img=models.ImageField(upload_to='acmchapter/',blank=True)
     def __str__(self):
         return self.title
 class Past(models.Model):

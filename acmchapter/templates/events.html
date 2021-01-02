@@ -12,6 +12,7 @@
         <div class="eventupcards">
             {% for j in uevents %}
             <div class="eventupcard">
+                <img src="{{j.img.url}}">
                 <h3>{{j.title}}</h3>
                 <p class="date">{{j.date}}</p>
                 <p>{{j.desc}}</p>
