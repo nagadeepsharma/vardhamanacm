@@ -12,11 +12,17 @@
         <div class="eventupcards">
             {% for j in uevents %}
             <div class="eventupcard">
+                {% if j.img  %}
                 <img src="{{j.img.url}}">
                 <h3>{{j.title}}</h3>
                 <p class="date">{{j.date}}</p>
                 <p>{{j.desc}}</p>
                 <a href="{{j.link}}">{{j.link}}</a>
+                {% else %}
+                 <h3>{{j.title}}</h3>
+                 <p class="date">{{j.date}}</p>
+                 {% endif %}
+
             </div>
             {%endfor%}
         </div>

@@ -15,11 +15,22 @@
 }
 .gcard{
     margin-top: 15vh;
-    height: 20%;
+    height: 60%;
     width: 30%;
     padding:5px;
 }
 .gcard img{
     width: 100%;
     height: 100%;
+}
+@media(max-width:667px){
+    .gallerymain{
+        align-items:center;
+        flex-direction:column;
+        flex-wrap:nowrap;
+    }
+    .gcard{
+        height:100%;
+        width:100%;
+    }
 }
