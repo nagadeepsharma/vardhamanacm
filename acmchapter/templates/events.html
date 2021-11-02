@@ -6,47 +6,21 @@
         <h1>Events</h1>
     </div>
     <div class="eventup">
-        <div class="eventuphead">
-            <h2>Upcomming Events</h2>
-        </div>
-        <div class="eventupcards">
-            {% for j in uevents %}
-            <div class="eventupcard">
-                {% if j.img  %}
-                <img src="{{j.img.url}}">
-                <h3>{{j.title}}</h3>
-                <p class="date">{{j.date}}</p>
-                <p>{{j.desc}}</p>
-                <a href="{{j.link}}">{{j.link}}</a>
-                {% else %}
-                 <h3>{{j.title}}</h3>
-                 <p class="date">{{j.date}}</p>
-                 {% endif %}
-
-            </div>
-            {%endfor%}
-        </div>
     </div>
     <div class="eventpast">
-        <div class="eventpasthead">
-            <h2>Past Events</h2>
-        </div>
-        <div class="eventpasttable">
-            <table>
+        <div class="eventpasttable" style="margin-bottom: 25px; height: fit-content;">
+            <table style="overflow: auto;border: 1px solid #f4f4f4;">
                 <thead>
                     <th>Date</th>
                     <th>Event</th>
                     <th>Attendees</th>
-                    <th>Details</th>
-                    <th>Speaker</th>
                 </thead>
                 {% for i in pevents %}
                 <tr>
                     <td>{{i.date}}</td>
                     <td>{{i.event}}</td>
                     <td>{{i.attendees}}</td>
-                    <td>{{i.details}}</td>
-                    <td>{{i.speaker}}</td>
+                    
                 </tr>
                 {% endfor %}
             </table>
