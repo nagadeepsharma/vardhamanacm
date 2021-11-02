@@ -1,0 +1,36 @@
+
+.gallery{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+.gallerymain{
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+.gcard{
+    margin-top: 15vh;
+    height: 60%;
+    width: 30%;
+    padding:5px;
+}
+.gcard img{
+    width: 100%;
+    height: 100%;
+}
+@media(max-width:667px){
+    .gallerymain{
+        align-items:center;
+        flex-direction:column;
+        flex-wrap:nowrap;
+    }
+    .gcard{
+        height:100%;
+        width:100%;
+    }
+}
