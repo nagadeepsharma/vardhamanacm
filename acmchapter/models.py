@@ -15,7 +15,7 @@ class Past(models.Model):
     event=models.CharField(max_length=100)
     attendees=models.IntegerField()
     details=models.TextField(blank=True)
-    speaker=models.CharField(max_length=30)
+    speaker=models.CharField(max_length=30,null=True,blank=True)
 
     def __str__(self):
         return self.event
