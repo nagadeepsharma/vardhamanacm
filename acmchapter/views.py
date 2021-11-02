@@ -13,7 +13,7 @@ def aboutus(request):
     return render(request,'aboutus.html')
 def events(request):
     uevents=Upcomming.objects.all()
-    pevents=Past.objects.all()
+    pevents=Past.objects.all().order_by('-date')
     return render(request,'events.html',{'uevents':uevents,'pevents':pevents})
 def ourteam(request):
     return render(request,'ourteam.html')
